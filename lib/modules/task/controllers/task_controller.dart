@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, unnecessary_brace_in_string_interps
+
 import 'dart:developer';
 import 'package:get/get.dart';
 import 'package:taskapp/apis/api_provider.dart';

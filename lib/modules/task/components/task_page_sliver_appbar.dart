@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:taskapp/modules/task/controllers/task_controller.dart';
 import 'package:taskapp/routes/route_management.dart';
