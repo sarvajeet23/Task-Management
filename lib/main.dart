@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: Themes.lightTheme,
       darkTheme: Themes.darkTheme,
       getPages: Routes.pages,
-      initialRoute: AppRoutes.homePage,
+      initialRoute: AppRoutes.initial,
       debugShowCheckedModeBanner: false,
     );
   }

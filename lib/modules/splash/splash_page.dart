@@ -15,8 +15,9 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          "hi",
-          style: AppStyles.style10Normal.copyWith(fontSize: 25),
+          "Hi",
+          style: AppStyles.style10Normal
+              .copyWith(fontSize: 35, color: Colors.blue.withOpacity(1.0)),
         ),
       ),
     );

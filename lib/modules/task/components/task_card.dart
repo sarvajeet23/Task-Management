@@ -20,17 +20,17 @@ class TaskCard extends StatelessWidget {
     this.description,
     this.isCompleted = false,
     required this.toggleCheckbox,
-    Key? key,
+    super.key,
     this.priority,
     this.status,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: getDecoration,
-      margin: EdgeInsets.all(10).copyWith(bottom: 4),
+      margin: const EdgeInsets.all(10).copyWith(bottom: 4),
       child: InkWell(
         onTap: onTap,
         child: Padding(
@@ -39,9 +39,9 @@ class TaskCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               priorityAndStatus(context),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               Container(
-                padding: EdgeInsets.only(left: 5),
+                padding: const EdgeInsets.only(left: 5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -52,7 +52,7 @@ class TaskCard extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     Text(
                       description ?? '',
                       maxLines: 5,
@@ -81,13 +81,13 @@ class TaskCard extends StatelessWidget {
           textColour: ServiceUtils.getPriorityColor(priority ?? 0),
           bgColor: ServiceUtils.getPriorityColor(priority ?? 0, isOpacity: true),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         FilterTag(
           title: status,
           textColour: ServiceUtils.getStatusColor(status ?? ''),
           bgColor: ServiceUtils.getStatusColor(status ?? '', isOpacity: true),
         ),
-        Spacer(),
+        const Spacer(),
         Checkbox(
           value: isCompleted,
           onChanged: toggleCheckbox,

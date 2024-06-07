@@ -34,7 +34,7 @@ class AddTaskPage extends StatelessWidget {
       appBar: AppBar(
         titleSpacing: 0,
         backgroundColor: AppColor.taskColour,
-        title: model != null ? Text("Update Task") : Text("Add Task"),
+        title: model != null ? const Text("Update Task") : const Text("Add Task"),
       ),
       body: Container(
         color: AppColor.taskColour,
@@ -50,10 +50,10 @@ class AddTaskPage extends StatelessWidget {
                     "Title",
                     style: AppStyles.style20Normal,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   TextFormField(
                     controller: titleController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
                       border: InputBorder.none,
@@ -67,7 +67,7 @@ class AddTaskPage extends StatelessWidget {
                   SizedBox(height: 10),
                   TextFormField(
                     controller: descriptionController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
                       border: InputBorder.none,
@@ -78,10 +78,10 @@ class AddTaskPage extends StatelessWidget {
                     "Status",
                     style: AppStyles.style20Normal,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   DropdownButtonFormField<String>(
                     value: selectedStatus,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
                       border: InputBorder.none,
@@ -106,7 +106,7 @@ class AddTaskPage extends StatelessWidget {
                   SizedBox(height: 10),
                   DropdownButtonFormField<String>(
                     value: selectedPriority,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
                       border: InputBorder.none,
@@ -123,7 +123,7 @@ class AddTaskPage extends StatelessWidget {
                       }
                     },
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Center(
                     child: SizedBox(
                       width: MediaQuery.of(context).size.width,
