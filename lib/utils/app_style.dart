@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taskapp/utils/dimens.dart';
 
 abstract class AppStyles {
   static const Color kShadowColor = Color.fromARGB(255, 0, 0, 0);
@@ -287,55 +288,54 @@ abstract class AppStyles {
     height: defaultHeight,
   );
 
-//   static List<BoxShadow> get defaultShadow => [
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(14),
-//           blurRadius: Dimens.four,
-//           spreadRadius: Dimens.zero,
-//           offset: Offset(Dimens.zero, Dimens.three),
-//         ),
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(12),
-//           blurRadius: Dimens.three,
-//           spreadRadius: -Dimens.two,
-//           offset: Offset(Dimens.zero, Dimens.three),
-//         ),
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(2),
-//           blurRadius: Dimens.eight,
-//           spreadRadius: Dimens.zero,
-//           offset: Offset(Dimens.zero, Dimens.one),
-//         ),
-//       ];
+  static List<BoxShadow> get defaultShadow => [
+        BoxShadow(
+          color: kShadowColor.withAlpha(14),
+          blurRadius: Dimens.four,
+          spreadRadius: Dimens.zero,
+          offset: Offset(Dimens.zero, Dimens.three),
+        ),
+        BoxShadow(
+          color: kShadowColor.withAlpha(12),
+          blurRadius: Dimens.three,
+          spreadRadius: -Dimens.two,
+          offset: Offset(Dimens.zero, Dimens.three),
+        ),
+        BoxShadow(
+          color: kShadowColor.withAlpha(2),
+          blurRadius: Dimens.eight,
+          spreadRadius: Dimens.zero,
+          offset: Offset(Dimens.zero, Dimens.one),
+        ),
+      ];
 
-//   static List<BoxShadow> get bottomNavbarShadow => [
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(14),
-//           blurRadius: Dimens.four,
-//           spreadRadius: Dimens.three,
-//           offset: Offset(Dimens.zero, Dimens.three),
-//         ),
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(12),
-//           blurRadius: Dimens.four,
-//           spreadRadius: -Dimens.two,
-//           offset: Offset(Dimens.zero, Dimens.three),
-//         ),
-//         BoxShadow(
-//           color: kShadowColor.withAlpha(2),
-//           blurRadius: 10,
-//           spreadRadius: Dimens.zero,
-//           offset: Offset(Dimens.zero, Dimens.one),
-//         ),
-//       ];
+  static List<BoxShadow> get bottomNavbarShadow => [
+        BoxShadow(
+          color: kShadowColor.withAlpha(14),
+          blurRadius: Dimens.four,
+          spreadRadius: Dimens.three,
+          offset: Offset(Dimens.zero, Dimens.three),
+        ),
+        BoxShadow(
+          color: kShadowColor.withAlpha(12),
+          blurRadius: Dimens.four,
+          spreadRadius: -Dimens.two,
+          offset: Offset(Dimens.zero, Dimens.three),
+        ),
+        BoxShadow(
+          color: kShadowColor.withAlpha(2),
+          blurRadius: 10,
+          spreadRadius: Dimens.zero,
+          offset: Offset(Dimens.zero, Dimens.one),
+        ),
+      ];
 
-//   static TextStyle get textfieldHintTextStyel =>
-//       TextStyle(color: Colors.grey, fontSize: Dimens.f14);
+  // static TextStyle get textfieldHintTextStyel =>
+  //     TextStyle(color: Colors.grey, fontSize: Dimens.f14);
 
-//   static TextStyle textfieldLabelTextStyle(BuildContext context) => TextStyle(
-//         fontSize: Dimens.f16,
-//         color: AppColors.primaryLightColor,
-//         fontWeight: FontWeight.w600,
-//       );
-// }
+  // static TextStyle textfieldLabelTextStyle(BuildContext context) => TextStyle(
+  //       fontSize: Dimens.f16,
+  //       color: AppColors.primaryLightColor,
+  //       fontWeight: FontWeight.w600,
+  //     );
 }
